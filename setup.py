@@ -15,14 +15,9 @@ from setuptools import setup
 setup(
     name="gluster-plus-one-scale",
     version="0.1",
-    packages=["glusterhealth", "glusterhealth.reports"],
+    packages=["scale"],
     include_package_data=True,
     install_requires=["glustercli"],
-    entry_points={
-        "console_scripts": [
-            "gluster-health-report = glusterhealth.main:main"
-        ]
-    },
     platforms="linux",
     zip_safe=False,
     author="Gluster Developers",
